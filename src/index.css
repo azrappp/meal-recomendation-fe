@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+.clean-calendar {
+  width: 100%;
+}
+
+.clean-calendar .rdp-months {
+  justify-content: center;
+}
+
+.clean-calendar .rdp-month {
+  width: 100%;
+}
+
+.clean-calendar .rdp-table {
+  width: 100%;
+  max-width: 100%;
+}
+
+.clean-calendar .rdp-cell {
+  padding: 4px;
+}
+
+.clean-calendar .rdp-button {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  font-size: 14px;
+}
+
+.clean-calendar .calendar-today {
+  border: 1px solid #6366f1;
+}
+
+.clean-calendar .calendar-selected-day {
+  background: #4f46e5 !important;
+  color: white !important;
+}
+
+.clean-calendar .calendar-has-menu {
+  position: relative;
+  font-weight: 700;
+}
+
+.clean-calendar .calendar-has-menu::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  width: 6px;
+  height: 6px;
+  transform: translateX(-50%);
+  border-radius: 9999px;
+  background: #22c55e;
+}
+
+.clean-calendar .calendar-selected-day.calendar-has-menu::after {
+  background: white;
+}
